@@ -147,4 +147,5 @@ button {
 /* MainHome */
 .carouselButton {
   background-color: #0d65c2;
+  border-radius: 50px;
 }
