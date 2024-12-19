@@ -131,3 +131,20 @@ button {
 .list-group-item {
   border: none;
 }
+/* SideBarHome */
+.picImage {
+  position: absolute;
+  top: 110px;
+  left: 65px;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.addPerson {
+  z-index: 1000;
+  color: black;
+  padding-left: 90%;
+}
+/* MainHome */
+.carouselButton {
+  background-color: #0d65c2;
+}

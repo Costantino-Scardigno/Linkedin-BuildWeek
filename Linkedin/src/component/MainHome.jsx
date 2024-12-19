@@ -17,7 +17,7 @@ const MainHome = () => {
 
           <Card.Body>
             {/* Progress bar */}
-            <div className="d-flex align-items-center mb-3">
+            <div className="d-flex align-items-center mb-3 carosello">
               <ProgressBar now={0} max={3} className="flex-grow-1 me-3" aria-valuemin={0} aria-valuemax={3} aria-valuenow={0} />
               <small className="text-muted">Completati: 0/3</small>
             </div>
@@ -27,27 +27,31 @@ const MainHome = () => {
               <Carousel.Item>
                 <Card>
                   <Card.Img variant="top" src="https://media.licdn.com/media/AAYQAgSuAAgAAQAAAAAAACwog6StkzhzSlK17m4iY5d_Xg.png" alt="" />
-                  <Card.Body className="text-center">
+                  <Card.Body className="text-left">
                     <Card.Text>Aggiungi la tua esperienza lavorativa e le tue competenze per mostrare i tuoi punti di forza ai recruiter.</Card.Text>
-                    <Button variant="primary">Aggiorna profilo</Button>
+                    <Button className="carouselButton  text-white" variant="primary">
+                      Aggiorna profilo
+                    </Button>
                   </Card.Body>
                 </Card>
               </Carousel.Item>
               <Carousel.Item>
                 <Card>
                   <Card.Img variant="top" src="https://media.licdn.com/media/AAYQAgSuAAgAAQAAAAAAACnZ-D2hlcNzRqqPRb5a8tlJcA.png" alt="" />
-                  <Card.Body className="text-center">
+                  <Card.Body className="text-left">
                     <Card.Text>Segui le aziende per cui vuoi lavorare per farti notare dai recruiter.</Card.Text>
-                    <Button variant="primary">Inizia a seguire</Button>
+                    <Button className="carouselButton  text-white" variant="primary">
+                      Inizia a seguire
+                    </Button>
                   </Card.Body>
                 </Card>
               </Carousel.Item>
               <Carousel.Item>
                 <Card>
                   <Card.Img variant="top" src="https://media.licdn.com/media/AAYQAgSuAAgAAQAAAAAAACo7WHxKUCLyR-mziznrNA3hZA.png" alt="" />
-                  <Card.Body className="text-center">
+                  <Card.Body className="text-left">
                     <Card.Text>Collegati con ex colleghi e chiedi referenze per le offerte di lavoro.</Card.Text>
-                    <button className="btn btn-primary ">Aggiorna Contenuto</button>
+                    <Button className="carouselButton  text-white">Aggiorna Contenuto</Button>
                   </Card.Body>
                 </Card>
               </Carousel.Item>
@@ -68,7 +72,7 @@ const MainHome = () => {
                 style={{ width: "48px", height: "48px" }}
               />
             </div>
-            <Button variant="outline-secondary" className="flex-grow-1 text-start">
+            <Button variant="outline-secondary" className=" flex-grow-1 text-start">
               <strong>Crea un post</strong>
             </Button>
           </Card.Body>
