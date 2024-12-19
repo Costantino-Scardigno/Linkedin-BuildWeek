@@ -182,6 +182,10 @@ const MainContent = ({ profile }) => {
                       {experience.area}
                     </p>
                     <p className="mt-2">{experience.description}</p>
+                    <a className="fw-semibold lh-1" href="#">
+                      <RiVipDiamondFill className="me-2 " />
+                      Leaders,Vendita diretta e +19 competenze
+                    </a>
                   </div>
                 </div>
               ))
