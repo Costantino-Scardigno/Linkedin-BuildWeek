@@ -125,3 +125,9 @@ button {
   color: #cb8209;
   font-size: 0.9rem;
 }
+.carousel-indicators {
+  display: none;
+}
+.list-group-item {
+  border: none;
+}
