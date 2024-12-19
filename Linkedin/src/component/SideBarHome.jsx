@@ -42,7 +42,7 @@ const SideBarHome = () => {
         </div>
 
         {/* Dettagli del membro */}
-        <Card.Body className="text-left mt-5">
+        <Card.Body className="rounded-3 text-left mt-5">
           <a
             href="/in/filippo-boesso-113a42342/?trk=eml-email_interested_candidates_activation_single_01-profile_prompt-0-mercado"
             className="text-decoration-none text-dark"
@@ -71,7 +71,7 @@ const SideBarHome = () => {
       </Card>
 
       {/* Analisi */}
-      <div className="card rounded-4 mb-3">
+      <div className="card rounded-3 mb-3">
         <ul className="list-group list-group-flush">
           <li className="list-group-item d-flex justify-content-between align-items-center">
             <a href="/dashboard/" className="text-decoration-none text-black">
@@ -91,7 +91,7 @@ const SideBarHome = () => {
       </div>
 
       {/* Premium */}
-      <div className="card rounded-4 mb-3">
+      <div className="card rounded-3 mb-3">
         <div className="card-body">
           <h6 className="card-subtitle text-muted premium">Accedi a strumenti e informazioni in esclusiva</h6>
           <a
@@ -107,7 +107,7 @@ const SideBarHome = () => {
       </div>
 
       {/* Elementi salvati */}
-      <div className="card mb-3 overflow-hidden p-3">
+      <div className="card rounded-3 mb-3 overflow-hidden p-3">
         <ul className="list-unstyled">
           {/* Elementi salvati */}
           <li className="mb-3">

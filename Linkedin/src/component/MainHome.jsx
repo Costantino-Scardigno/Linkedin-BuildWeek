@@ -1,4 +1,4 @@
-import { Card, Button, Carousel, ProgressBar, Dropdown } from "react-bootstrap";
+import { Card, Button, Carousel, ProgressBar, Dropdown, Image } from "react-bootstrap";
 
 const MainHome = () => {
   return (
@@ -62,35 +62,48 @@ const MainHome = () => {
 
       {/* Share Box */}
       <section className="mb-3">
-        <Card>
-          <Card.Body className="d-flex align-items-center">
-            <div className="me-3">
-              <img
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                alt="Avatar"
-                className="rounded-circle"
-                style={{ width: "48px", height: "48px" }}
-              />
-            </div>
-            <Button variant="outline-secondary" className=" flex-grow-1 text-start">
+        <Card className="mb-3 p-3">
+          {/* Barra superiore */}
+          <div className="d-flex align-items-center mb-3">
+            <a href="/in/filippo-boesso-113a42342" className="me-2">
+              <Image src="https://via.placeholder.com/48" roundedCircle alt="Profilo" className="border" />
+            </a>
+            <Button variant="outline-secondary" className="searchBar flex-grow-1 text-start">
               <strong>Crea un post</strong>
             </Button>
-          </Card.Body>
-          <Card.Footer className="d-flex justify-content-between">
-            <Button variant="link">Foto</Button>
-            <Button variant="link">Video</Button>
-            <Button variant="link">Scrivi un articolo</Button>
-          </Card.Footer>
+          </div>
+
+          {/* Toolbar */}
+          <div className="d-flex mx-4 justify-content-between">
+            {/* Aggiungi una foto */}
+            <Button className=" buttonPost d-flex align-items-center bg-white text-secondary fw-bold">
+              <i className="bi bi-image-fill text-primary pe-2"></i>
+              Foto
+            </Button>
+
+            {/* Aggiungi un video */}
+            <Button className="buttonPost d-flex align-items-center bg-white text-secondary fw-bold">
+              <i className="bi bi-play-btn-fill text-success pe-2"></i>
+              Video
+            </Button>
+
+            {/* Scrivi un articolo */}
+            <a href="/article/new/" className=" border-none d-flex align-items-center bg-white text-secondary fw-bold text-decoration-none">
+              <i className="bi bi-file-earmark-text-fill text-danger pe-2"></i>
+              Scrivi un articolo
+            </a>
+          </div>
         </Card>
       </section>
 
       {/* Sort Options */}
-      <section className="mb-3">
+      <section className="secDrop mb-3">
         <Dropdown>
-          <Dropdown.Toggle variant="light" className="w-100">
-            <div className="d-flex justify-content-between align-items-center">
+          <Dropdown.Toggle className=" text-black dropDown w-100">
+            <div className="d-flex   align-items-center">
               <small>Seleziona la visualizzazione del feed:</small>
-              <strong>Più rilevanti per primi</strong>
+              <strong className="relevant">Più rilevanti per primi</strong>
+              <i className="bi bi-chevron-down ps-1"></i>
             </div>
           </Dropdown.Toggle>
           <Dropdown.Menu>

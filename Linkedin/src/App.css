@@ -140,7 +140,6 @@ button {
   z-index: 2;
 }
 .addPerson {
-  z-index: 1000;
   color: black;
   padding-left: 90%;
 }
@@ -148,4 +147,28 @@ button {
 .carouselButton {
   background-color: #0d65c2;
   border-radius: 50px;
+}
+.buttonPost {
+  border: none;
+}
+.dropDown {
+  background-color: #f3f2ef;
+  border: none;
+}
+.relevant {
+  margin-left: 32%;
+}
+.dropDown,
+.secDrop :hover {
+  background-color: whitesmoke;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+.searchBar {
+  border-radius: 50px;
+  border-color: gray;
+  background-color: #f4f4f4;
+  padding-block: 0.8rem;
+  color: black;
 }
