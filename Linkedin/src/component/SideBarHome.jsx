@@ -4,7 +4,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 
 const SideBarHome = () => {
   return (
-    <div className="d-flex flex-column col-3 mt-4">
+    <div className="d-flex flex-column col-3 mt-4 ">
       {/* Barra Laterale */}
       <Card className="mb-3 overflow-hidden">
         {/* Sfondo del profilo */}
@@ -71,7 +71,7 @@ const SideBarHome = () => {
       </Card>
 
       {/* Analisi */}
-      <div className="card mb-3">
+      <div className="card rounded-4 mb-3">
         <ul className="list-group list-group-flush">
           <li className="list-group-item d-flex justify-content-between align-items-center">
             <a href="/dashboard/" className="text-decoration-none text-black">
@@ -91,7 +91,7 @@ const SideBarHome = () => {
       </div>
 
       {/* Premium */}
-      <div className="card mb-3">
+      <div className="card rounded-4 mb-3">
         <div className="card-body">
           <h6 className="card-subtitle text-muted premium">Accedi a strumenti e informazioni in esclusiva</h6>
           <a

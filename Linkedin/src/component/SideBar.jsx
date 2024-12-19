@@ -23,7 +23,7 @@ const SideBar = ({ profile }) => {
         }
       })
       .then((data) => {
-        setusers(data); // Salva i dati ricevuti nello stato
+        setusers(data.slice(0, 7)); // Salva i dati ricevuti nello stato
       })
       .catch((err) => {
         console.error("Errore durante la fetch", err);
