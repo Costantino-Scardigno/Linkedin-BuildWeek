@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Form, InputGroup } from "react-bootstrap";
 import { FaSearch } from "react-icons/fa";
 import { AiFillHome } from "react-icons/ai";
@@ -11,7 +11,7 @@ import MainContent from "./MainContent";
 
 const Mynavbar = () => {
   const [profile, setProfile] = useState(null);
-  const [error, setError] = useState(null);
+  const [setError] = useState(null);
   const [showProfile, setShowProfile] = useState(false); // Stato per gestire la visibilità
 
   // Funzione per eseguire la fetch
@@ -21,8 +21,8 @@ const Mynavbar = () => {
       headers: {
         "Content-Type": "application/json",
         Authorization:
-          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzYyYWQwMTUzMDRhNzAwMTUxNDhiZDgiLCJpYXQiOjE3MzQ1MjA1MjUsImV4cCI6MTczNTczMDEyNX0.jS3S2eLCdwy7VCt0Rw4QaZZcR28Jj0XYWNghDsz0NWU",
-      },
+          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzYyYWQwMTUzMDRhNzAwMTUxNDhiZDgiLCJpYXQiOjE3MzQ1MjA1MjUsImV4cCI6MTczNTczMDEyNX0.jS3S2eLCdwy7VCt0Rw4QaZZcR28Jj0XYWNghDsz0NWU"
+      }
     })
       .then((resp) => {
         if (resp.ok) {
@@ -54,22 +54,14 @@ const Mynavbar = () => {
       <nav>
         <div className="row align-items-center">
           <div className="mt-1 mb-1 me-5 col-5 d-flex justify-content-end align-items-center">
-            <img
-              className="logo"
-              src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg"
-              alt="Logo"
-            />
+            <img className="logo" src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="Logo" />
 
             <div className="ms-3">
               <InputGroup>
                 <InputGroup.Text>
                   <FaSearch />
                 </InputGroup.Text>
-                <Form.Control
-                  placeholder="Cerca..."
-                  aria-label="Cerca"
-                  aria-describedby="search-icon"
-                />
+                <Form.Control placeholder="Cerca..." aria-label="Cerca" aria-describedby="search-icon" />
               </InputGroup>
             </div>
           </div>
@@ -101,15 +93,7 @@ const Mynavbar = () => {
             <button onClick={handleProfileClick}>
               {" "}
               {/* Aggiunto onClick */}
-              <img
-                className="profile"
-                src={
-                  profile && profile.image
-                    ? profile.image
-                    : "https://via.placeholder.com/150"
-                }
-                alt="Profile"
-              />
+              <img className="profile" src={profile && profile.image ? profile.image : "https://via.placeholder.com/150"} alt="Profile" />
               <span className="t-12">
                 Tu <IoMdArrowDropdown className="text-black fs-5" />
               </span>
