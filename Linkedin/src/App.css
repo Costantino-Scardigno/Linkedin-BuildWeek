@@ -172,3 +172,46 @@ button {
   padding-block: 0.8rem;
   color: black;
 }
+
+.custom-w {
+  width: 70px;
+}
+.modal-content {
+  height: 70vh;
+}
+.border-none {
+  border: none;
+}
+.custom-bg {
+  background-color: #e8e8e8;
+}
+.custom-bg:hover {
+  color: white !important;
+}
+textarea.my-border-none {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+textarea.my-border-none:focus {
+  border: none !important;
+  outline: none !important;
+}
+
+.fixed-height {
+  height: 200px; /* Altezza fissa */
+  resize: none; /* Impedisce il ridimensionamento manuale (opzionale) */
+}
+
+.custom-btn {
+  background-color: white;
+  color: black;
+  border: none;
+}
+.custom-btn:hover {
+  background-color: grey;
+}
+.custom-w2 {
+  width: 50px;
+}

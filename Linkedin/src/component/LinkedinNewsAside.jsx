@@ -8,7 +8,13 @@ const LinkedInNewsAside = () => {
         <Card.Header className="d-flex justify-content-between align-items-center">
           <h5>In primo piano</h5>
           <Button variant="link" className="p-0" aria-label="Chiudi">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" width="16" height="16">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              width="16"
+              height="16"
+            >
               <path d="M14 3.41L9.41 8 14 12.59 12.59 14 8 9.41 3.41 14 2 12.59 6.59 8 2 3.41 3.41 2 8 6.59 12.59 2z" />
             </svg>
           </Button>
@@ -17,22 +23,39 @@ const LinkedInNewsAside = () => {
           <h6 className="text-muted">a cura di LinkedIn Notizie</h6>
           <ListGroup className="mt-3">
             <ListGroupItem>
-              <a href="/news/story/tech-le-tendenze-del-2025-6259028/" className="text-dark text-decoration-none">
-                <strong>Tech: le tendenze del 2025</strong>
+              <a
+                href="/news/story/tech-le-tendenze-del-2025-6259028/"
+                className="text-dark text-decoration-none"
+              >
+                <strong className="fw-medium">
+                  Tech: le tendenze del 2025
+                </strong>
                 <br />
-                <small className="text-muted">1 giorno fa • 1.889 lettori</small>
+                <small className="text-muted">
+                  1 giorno fa • 1.889 lettori
+                </small>
               </a>
             </ListGroupItem>
             <ListGroupItem>
-              <a href="/news/story/revolut-diventa-banca-italiana-6503817/" className="text-dark text-decoration-none">
-                <strong>Revolut diventa banca italiana</strong>
+              <a
+                href="/news/story/revolut-diventa-banca-italiana-6503817/"
+                className="text-dark text-decoration-none"
+              >
+                <strong className="fw-medium">
+                  Revolut diventa banca italiana
+                </strong>
                 <br />
                 <small className="text-muted">1 giorno fa • 795 lettori</small>
               </a>
             </ListGroupItem>
             <ListGroupItem>
-              <a href="/news/story/istantanee-dal-maximall-pompeii-6278404/" className="text-dark text-decoration-none">
-                <strong>Istantanee dal Maximall Pompeii</strong>
+              <a
+                href="/news/story/istantanee-dal-maximall-pompeii-6278404/"
+                className="text-dark text-decoration-none"
+              >
+                <strong className="fw-medium">
+                  Istantanee dal Maximall Pompeii
+                </strong>
                 <br />
                 <small className="text-muted">1 giorno fa • 384 lettori</small>
               </a>
@@ -51,7 +74,10 @@ const LinkedInNewsAside = () => {
         </Card.Header>
         <ListGroup>
           <ListGroupItem>
-            <a href="/games/tango/" className="text-dark text-decoration-none d-flex align-items-center">
+            <a
+              href="/games/tango/"
+              className="text-dark text-decoration-none d-flex align-items-center"
+            >
               <img
                 src="https://static.licdn.com/aero-v1/sc/h/im5l00imv9odauybfemlfxm6"
                 alt="Tango"
@@ -66,7 +92,10 @@ const LinkedInNewsAside = () => {
             </a>
           </ListGroupItem>
           <ListGroupItem>
-            <a href="/games/queens/" className="text-dark text-decoration-none d-flex align-items-center">
+            <a
+              href="/games/queens/"
+              className="text-dark text-decoration-none d-flex align-items-center"
+            >
               <img
                 src="https://static.licdn.com/aero-v1/sc/h/25itbd3dpc6ockbgvdhot9qp1"
                 alt="Queens"
@@ -87,17 +116,29 @@ const LinkedInNewsAside = () => {
       <footer className="text-center mt-4">
         <ul className="list-inline">
           <li className="list-inline-item">
-            <a href="https://about.linkedin.com/it-it" target="_blank" rel="noreferrer">
+            <a
+              href="https://about.linkedin.com/it-it"
+              target="_blank"
+              rel="noreferrer"
+            >
               Informazioni
             </a>
           </li>
           <li className="list-inline-item">
-            <a href="https://www.linkedin.com/accessibility" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.linkedin.com/accessibility"
+              target="_blank"
+              rel="noreferrer"
+            >
               Accessibilità
             </a>
           </li>
           <li className="list-inline-item">
-            <a href="https://www.linkedin.com/help/linkedin" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.linkedin.com/help/linkedin"
+              target="_blank"
+              rel="noreferrer"
+            >
               Centro assistenza
             </a>
           </li>
