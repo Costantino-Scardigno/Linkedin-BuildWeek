@@ -52,11 +52,8 @@ const PostFeed = () => {
       )}
       {Post ? (
         Post.map((posts, index) => (
-          <div>
-            <div
-              className="d-flex flex-column justify-content-between p-3 border-bottom"
-              key={index}
-            >
+          <div key={index}>
+            <div className="d-flex flex-column justify-content-between p-3 border-bottom">
               <div className="d-flex justify-content-between">
                 <div className="d-flex">
                   <img

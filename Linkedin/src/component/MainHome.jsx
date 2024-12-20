@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import {
   Card,
   Button,
@@ -12,35 +12,41 @@ import {
 import PostFeed from "./PostFeed";
 
 const MainHome = () => {
-  const [profile, setProfile] = useState(null);
-  const [error, setError] = useState(null);
-  const fetchProfile = () => {
-    fetch("https://striveschool-api.herokuapp.com/api/profile/me", {
-      method: "GET",
+  // SECONDA FETCH
+  const [text, setText] = useState("");
+  const handleTextChange = useCallback((e) => {
+    setText(e.target.value);
+  }, []);
+
+  const handleSubmit = () => {
+    const postData = {
+      text: text,
+    };
+    fetch("https://striveschool-api.herokuapp.com/api/posts/", {
+      method: "POST",
       headers: {
         "Content-Type": "application/json",
         Authorization:
           "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzYyYWQwMTUzMDRhNzAwMTUxNDhiZDgiLCJpYXQiOjE3MzQ1MjA1MjUsImV4cCI6MTczNTczMDEyNX0.jS3S2eLCdwy7VCt0Rw4QaZZcR28Jj0XYWNghDsz0NWU",
       },
+      body: JSON.stringify(postData),
     })
       .then((resp) => {
         if (resp.ok) {
           return resp.json();
         } else {
-          throw new Error("Errore nella chiamata del profilo");
+          throw new Error("Errore nella chiamata");
         }
       })
       .then((data) => {
-        setProfile(data);
+        setText(data);
+        handleClose();
       })
       .catch((err) => {
-        console.error("Errore durante la fetch del profilo", err);
-        setError(err.message);
+        console.log(err);
       });
   };
-  useEffect(() => {
-    fetchProfile(); // Prima fetch per il profilo
-  }, []);
+
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -153,7 +159,7 @@ const MainHome = () => {
           <div className="d-flex align-items-center mb-3">
             <a href="/in/filippo-boesso-113a42342" className="me-2">
               <Image
-                src={profile.image}
+                src="https://media.licdn.com/dms/image/v2/D4D03AQEY2pdgAdT1eg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1713507583452?e=1740009600&v=beta&t=YFB82azL3RNgBrKA8q-KprdeesZxXwJfhbR6bSMU4Rg"
                 roundedCircle
                 alt="Profilo"
                 className="border custom-w2"
@@ -196,6 +202,8 @@ const MainHome = () => {
                       className="bg-white my-border-none fixed-height "
                       placeholder="Di cosa vorresti parlare?"
                       as="textarea"
+                      value={text}
+                      onChange={handleTextChange}
                       rows={3}
                     />
                   </Form.Group>
@@ -219,7 +227,7 @@ const MainHome = () => {
                 <Button
                   className="custom-bg rounded-pill border-none px-4 fw-semibold text-body-tertiary"
                   variant="primary"
-                  onClick={handleClose}
+                  onClick={handleSubmit}
                 >
                   Pubblica
                 </Button>
