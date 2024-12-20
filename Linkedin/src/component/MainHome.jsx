@@ -168,7 +168,7 @@ const MainHome = () => {
             <Button
               onClick={handleShow}
               variant="outline-secondary"
-              className="searchBar flex-grow-1 text-start bg-white fw-normal"
+              className="btn-creapost searchBar flex-grow-1 text-start  fw-normal"
             >
               <strong className="fw-medium">Crea un post</strong>
             </Button>
@@ -199,7 +199,7 @@ const MainHome = () => {
                     controlId="exampleForm.ControlTextarea1"
                   >
                     <Form.Control
-                      className="bg-white my-border-none fixed-height "
+                      className="bg-white my-border-none fixed-height fs-5 "
                       placeholder="Di cosa vorresti parlare?"
                       as="textarea"
                       value={text}
@@ -252,7 +252,7 @@ const MainHome = () => {
             {/* Scrivi un articolo */}
             <a
               href="/article/new/"
-              className=" border-none d-flex align-items-center bg-white text-secondary fw-bold text-decoration-none"
+              className="buttonPost rounded border-none d-flex align-items-center bg-white text-secondary fw-bold text-decoration-none"
             >
               <i className="bi bi-file-earmark-text-fill text-danger pe-2"></i>
               Scrivi un articolo

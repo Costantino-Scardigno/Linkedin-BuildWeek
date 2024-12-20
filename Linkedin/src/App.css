@@ -151,6 +151,9 @@ button {
 .buttonPost {
   border: none;
 }
+.buttonPost:hover {
+  background-color: #f3f3f3 !important ;
+}
 .dropDown {
   background-color: #f3f2ef;
   border: none;
@@ -214,4 +217,20 @@ textarea.my-border-none:focus {
 }
 .custom-w2 {
   width: 50px;
+}
+
+.btn-post:hover {
+  background-color: #f3f3f3;
+}
+.custom-bg2:hover {
+  background-color: #f3f3f3;
+}
+
+.btn-creapost {
+  background-color: white;
+  color: #6f6f6f;
+}
+.btn-creapost:hover {
+  color: black;
+  background-color: #f3f3f3;
 }
