@@ -125,3 +125,93 @@ button {
   color: #cb8209;
   font-size: 0.9rem;
 }
+.carousel-indicators {
+  display: none;
+}
+.list-group-item {
+  border: none;
+}
+/* SideBarHome */
+.picImage {
+  position: absolute;
+  top: 110px;
+  left: 65px;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.addPerson {
+  color: black;
+  padding-left: 90%;
+}
+/* MainHome */
+.carouselButton {
+  background-color: #0d65c2;
+  border-radius: 50px;
+}
+.buttonPost {
+  border: none;
+}
+.dropDown {
+  background-color: #f3f2ef;
+  border: none;
+}
+.relevant {
+  margin-left: 32%;
+}
+.dropDown,
+.secDrop :hover {
+  background-color: whitesmoke;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+.searchBar {
+  border-radius: 50px;
+  border-color: gray;
+  background-color: #f4f4f4;
+  padding-block: 0.8rem;
+  color: black;
+}
+
+.custom-w {
+  width: 70px;
+}
+.modal-content {
+  height: 70vh;
+}
+.border-none {
+  border: none;
+}
+.custom-bg {
+  background-color: #e8e8e8;
+}
+.custom-bg:hover {
+  color: white !important;
+}
+textarea.my-border-none {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+textarea.my-border-none:focus {
+  border: none !important;
+  outline: none !important;
+}
+
+.fixed-height {
+  height: 200px; /* Altezza fissa */
+  resize: none; /* Impedisce il ridimensionamento manuale (opzionale) */
+}
+
+.custom-btn {
+  background-color: white;
+  color: black;
+  border: none;
+}
+.custom-btn:hover {
+  background-color: grey;
+}
+.custom-w2 {
+  width: 50px;
+}
